@@ -1,19 +1,16 @@
 class Person 
-  attr_reader  :name,
-               :amount,
-               :bank_accounts
-               
-  def initialize(name, amount)
-    @name           = name
-    @amount         = amount
-    @bank_accounts  = bank_accounts
-    puts "#{name} has been created with #{amount} galleons in cash."
-  end             
-end
-
-person1 = Person.new("Minerva", 1000)
-person2 = Person.new("Luna", 500)
-
-
+  attr_reader :bank,
+              :name,
+              :cash_amount
+              :account_balance
+              
+  def initialize(name, cash_amount)
+    @name            = name 
+    @cash_amount     = cash_amount
+    @bank            = bank 
+    @account_balance = 0
+    puts "#{name} has been created with #{cash_amount} galleons in cash."
+  end 
+end            
 
          
