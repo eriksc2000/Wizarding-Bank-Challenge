@@ -9,7 +9,7 @@ class Person
     @cash_amount     = cash_amount
     @bank            = bank 
     @account_balance = 0
-    puts "#{name} has been created with #{cash_amount} galleons in cash."
+    "#{name} has been created with #{cash_amount} galleons in cash."
   end 
 end            
 
